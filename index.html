@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+  <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="main.css">
+  <title>電卓</title>
+ </head>
+  
+ <body>
+  <table class="dentaku">
+   <tr>
+    <td colspan="4" id="result">0</td>  <!-- 横方向にセル結合 -->
+   </tr>
+   
+   <tr>
+    <td class="dentaku_btn">
+     <button class="button" onclick="clickbutton_num(this)">7</button>
+    </td>
+    <td class="dentaku_btn">
+     <button class="button" onclick="clickbutton_num(this)">8</button>
+    </td>
+    <td class="dentaku_btn">
+     <button class="button" onclick="clickbutton_num(this)">9</button>
+    </td>
+    <td class="dentaku_btn">
+     <button class="button" onclick="clickbutton_ope(this)">+</button>
+    </td>
+   </tr>
+   
+   <tr>
+    <td class="dentaku_btn">
+     <button class="button" onclick="clickbutton_num(this)">4</button>
+    </td>
+    <td class="dentaku_btn">
+     <button class="button" onclick="clickbutton_num(this)">5</button>
+    </td>
+    <td class="dentaku_btn">
+     <button class="button" onclick="clickbutton_num(this)">6</button>
+    </td>
+    <td class="dentaku_btn">
+     <button class="button" onclick="clickbutton_ope(this)">-</button>
+    </td>
+   </tr>
+   
+   <tr>
+    <td class="dentaku_btn">
+     <button class="button" onclick="clickbutton_num(this)">1</button>
+    </td>
+    <td class="dentaku_btn">
+     <button class="button" onclick="clickbutton_num(this)">2</button>
+    </td>
+    <td class="dentaku_btn">
+     <button class="button" onclick="clickbutton_num(this)">3</button>
+    </td>
+    <td class="dentaku_btn">
+     <button class="button" onclick="clickbutton_ope(this)">*</button>
+    </td>
+   </tr>
+   
+   <tr>
+    <td class="dentaku_btn">
+     <button class="button" onclick="clickbutton_num(this)">0</button>
+    </td>
+    <td class="dentaku_btn">
+     <button class="button" onclick="clickbutton_num(this)">00</button>
+    </td>
+    <td class="dentaku_btn">
+     <button class="button" onclick="clickbutton_num(this)">.</button>
+    </td>
+    <td class="dentaku_btn">
+     <button class="button" onclick="clickbutton_ope(this)">/</button>
+    </td>
+   </tr>
+   
+   <tr>
+    <td colspan="2">  
+     <button class="button" onclick="clickbutton_clear(this)">AC</button>
+    </td>
+    
+    <td colspan="2">  
+     <button class="button" onclick="clickbutton_equal(this)">=</button>
+    </td>
+   </tr>
+   
+  </table>
+  
+  <script src="main.js"></script>
+  
+  
+ </body>
+</html>
